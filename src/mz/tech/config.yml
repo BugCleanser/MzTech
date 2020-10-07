@@ -1,0 +1,137 @@
+lang: zh_cn #选择后会导出到配置旁边，可自行修改
+            #格式:       翻译前名称=翻译名称
+            #得到物品翻译前名称： /mztech iteminfo
+
+autoWelcome: true   #超级沙雕的功能
+welcome:
+ - "欢迎"
+ - "欢迎欢迎"
+ - "欢迎新人"
+ - "欢迎新朋友"
+fireworkElytraTime: 100     #（未实现的功能）烟花鞘翅使用间隔限制 单位：tick
+
+entityStack: true       #实体堆叠、实体名称显示
+
+growGrassTranslate: true    #真·生草翻译
+growGrassTranslations:  #翻译列表  使用物品mid（非原版ID）和子ID   得到mid和子ID：/mztech iteminfo
+ "grass": "谷歌"
+ "long_grass:1": "生草翻译"
+ "long_grass:2": "妈的蕨了"
+ "double_plant:2": "太草了！"
+ "banner": "法国国旗"
+ "stick": "法国面包"
+ "blaze_rod": "黄油法国面包"
+ "golden_apple": "鸡屁股"
+ "golden_apple:1": "抚摸鸡屁股"
+ "eye_of_ender": "末影尻眼"
+ "gold_pickaxe": "镐黄色"
+ "dropper": "微笑机"
+ "diode": "二极管"
+
+AllowHighVersion: true  #允许高版本玩家加入游戏，修复高版本显示问题，高版本应该指≥1.13
+HighVersion: false      #服务端的版本是否为高版本，高版本应该指≥1.13
+MzTech: "§e[§bMz科技§e] §r"   #提示信息的前缀
+smilingCraftingTable: "§e[§6微笑的合成台§e] §r"   #微笑的合成台提示的前缀
+
+dropsName: true #显示掉落物名称
+customNameFormat: "[§o{Name}§r]"    #有displayName的物品显示格式，{Name}为其displayName
+locNameFormat: "{Name}"             #有LocName的物品显示格式，{Name}为其LocName，通常为科技物品的显示名
+defaultNameFormat: "{Name}"         #原版物品的显示格式，{Name}为翻译后的物品
+countFormat: "§r *{Count}"          #数量的显示格式，物品超过一个时加在其他格式的后面，{Count}为数量
+masks: #不显示的物品，正则匹配最终显示名（按照显示格式）
+ - ".*mask.*"
+
+cnmb: 1     #草泥马币的价格
+
+###### 转化桌
+clinkeringValue: 0.02   #烧炼之后物品增长的价格
+values:             #各物品的价格  使用物品mid（非原版ID）和子ID   得到mid和子ID：/mztech iteminfo
+  "diamond": 1                  #钻石
+  "emerald": 1.2                #绿宝石
+  "exp_bottle": 0.01            #经验瓶
+  "raw_fish:0": 0.1             #生鱼 ———— 使用:加子ID
+  "raw_fish:1": 0.12            #生鮭鱼
+  "raw_fish:2": 0.15            #小丑鱼
+  "raw_fish:3": 0.2             #河豚
+  "apple": 0.01                 #苹果
+  "log:0": 0.01                 #橡木
+  "log:1": 0.01                 #云山木
+  "log:2": 0.01                 #白桦木
+  "log:3": 0.01                 #从林木
+  "log_2:0": 0.01               #合金欢木
+  "log_2:1": 0.01               #深色橡木
+  "iron_ore": 0.13              #铁矿石
+  "gold_ore": 0.58              #金矿石
+  "sand": 0.003                 #沙子
+  "sand:1": 0.02                #红沙
+  "gravel": 0.002               #沙砾
+  "ink_sack:3": 0.03            #可可豆
+  "ink_sack:4": 0.01            #青金石
+  "redstone": 0.01              #红石
+  "cobblestone": 0.001          #圆石
+  "coal": 0.1                   #煤炭
+  "sulphur": 0.01               #火药
+  "grass": 0.005                #草方块
+  "dirt": 0.001                 #土块
+  "dirt:1": 0.001               #砂土
+  "dirt:2": 0.005               #灰化土
+  "sponge": 5                   #海绵
+  "soul_sand": 0.03             #灵魂沙
+  "NETHERRACK": 0.002           #地狱岩
+  "ENDER_PEARL": 0.01           #末影之眼
+  "bedrock": 0.03               #基岩
+  "SHULKER_SHELL": 2.0          #潜影壳
+  "sugar_cane": 0.05            #甘蔗
+  "leather": 0.1                #皮革
+  "wheat": 0.05                 #小麦
+  "seeds": 0.01                 #种子
+  "melon": 0.02                 #西瓜片
+  "pumpkin": 0.08               #南瓜
+  "slime_ball": 0.3             #粘液球
+  "quartz": 0.03                #石英
+  "water_lily": 0.01            #荷叶
+  "pork": 0.08                  #生猪肉
+  "raw_beef": 0.08              #生牛肉
+  "rotten_flesh": 0.05          #腐肉
+  "carrot_item": 0.05           #萝卜
+  "potato_item": 0.05           #土豆
+  "poisonous_potato": 0.02      #发芽的土豆
+  "spider_eye": 0.08            #蜘蛛眼
+  "mutton": 0.08                #羊肉
+  "string": 0.02                #线
+  "obsidian": 0.1               #黑曜石
+  "saddle": 1                   #马鞍
+  "diamond_barding": 10         #钻石马凯
+  "gold_barding": 5             #金马凯
+  "iron_barding": 2             #铁马凯
+  "bone": 0.05                  #骨头
+  "egg":  0.01                  #鸡蛋
+  "blaze_rod": 0.1              #烈焰棒
+  "clay_ball": 0.01             #黏土
+  "glowstone_dust": 0.005       #萤石
+  "feather": 0.02               #羽毛
+  "nether_stalk": 0.05          #地狱疣
+  "brown_mushroom": 0.05        #棕蘑菇
+  "red_mushroom": 0.05          #红蘑菇
+  "chorus_fruit": 0.005         #紫颂果
+  "double_plant:4": 0.01        #玫瑰丛
+  "raw_chicken": 0.08           #生鸡肉
+  "yellow_flower:0": 0.01       #蒲公英
+  "red_rose:0": 0.01            #虞美人
+  "red_rose:1": 0.01            #兰花
+  "red_rose:2": 0.01            #绒球葱
+  "red_rose:3": 0.01            #茜草花
+  "red_rose:4": 0.01            #红色郁金香
+  "red_rose:5": 0.01            #橙色郁金香
+  "red_rose:6": 0.01            #白色郁金香
+  "red_rose:7": 0.01            #粉红色郁金香
+  "red_rose:8": 0.01            #宾菊
+  "double_plant:1": 0.03        #丁香
+  "double_plant:4": 0.03        #玫瑰丛
+  "double_plant:5": 0.03        #牡丹
+  "water_bucket": 0.4501        #水桶（娃哈哈）
+  "magma": 0.01                 #修正 ———— 岩浆块
+  "rails": 0.01                 #修正 ———— 铁轨
+  "powered_rail": 0.01          #修正 ———— 动力铁轨
+  "detector_rail": 0.01         #修正 ———— 探测铁轨
+  "activator_rail": 0.01        #修正 ———— 激活铁轨

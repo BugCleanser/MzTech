@@ -1,0 +1,16 @@
+name: MzTech
+author: Meng zhao
+version: 6.0.1
+main: mz.tech.MzTech
+depend: [Vault,ProtocolLib]
+api-version: 1.13
+commands:
+    MzTech:
+        description: Mz科技命令
+        usage: /MzTech reload
+    sunday:
+        description: /sun and /day
+        usage: /sunday
+    color:
+        description: command with color
+        usage: /color /command ...
